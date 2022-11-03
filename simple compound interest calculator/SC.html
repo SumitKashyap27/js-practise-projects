@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest Compound Interest calculator</title>
+    <link href="sc1.css" rel="stylesheet">
+</head>
+<h1>Simple interest and Compound Interest calculator</h1>
+<body>
+    <section class="table">
+    <table>
+        <tr>
+            <td><input type="text" name ="a" id ="first" placeholder="enter principal"/>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text" name ="b" id ="second" placeholder="enter time period"/></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name ="c" id ="third" placeholder="enter rate of Interest(%)"/>
+            </td>
+        </tr>
+        <tr>
+            <td> <button onclick = "simple_interest()" >Submit</button> </td>
+            </tr>
+    </table>
+    </section>
+    <div id="num"> </div>
+    <div id="num1"></div>
+</body>
+<script type="text/javascript">
+    function simple_interest()
+    {
+    var p,t,r,si,ci;
+    p = document.getElementById ("first").value;
+    t = document.getElementById ("second").value;
+    r = document.getElementById ("third").value;
+    si = parseInt((p*t*r)/100 );
+    amount = p*Math.pow((1 +r/100),t );
+    ci = amount-p;
+    document.getElementById ('num').innerHTML ="Simple interest : "+si;
+    document.getElementById ('num1').innerHTML ="Compound interest : "+ci;
+    }
+    </script>
+</html>

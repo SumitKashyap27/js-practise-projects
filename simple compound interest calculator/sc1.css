@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    background-color: rgb(129, 120, 120);
+    color: antiquewhite;
+}
+.table {
+    padding-top: 30px;
+    padding-left: 720px;
+}
