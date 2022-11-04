@@ -6,8 +6,8 @@ var colorDisplay = document.querySelector("#colorDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
-var easyBtn = document.querySelector("#easyButton");
-var hardBtn = document.querySelector("#hardButton");
+var easyBtn = document.querySelector("#easybutton");
+var hardBtn = document.querySelector("#hardbutton");
 
 
 easyBtn.addEventListener("click", function () {
