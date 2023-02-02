@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript">
+        var actualpin = "1234";
+        var pin;
+        var count = 0;
+        do {
+            pin = prompt("enter your pin:", "enter..");
+            count++;
+        }while(pin !=actualpin && count<3);
+        if(pin == actualpin)
+        {
+            document.write("welcome user");
+        }
+        else{
+            document.write("account locked");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

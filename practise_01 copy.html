@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript">
+        var practise = {
+            "topic" : "javascript",
+            "me" : "sumit",
+            "mode" : "online",
+        }
+        document.write("topic : " + practise.topic + "<br/>");
+        document.write("me : " + practise.me + "<br/>");
+        document.write("mode:" + practise.mode + "<br/>");
+        var txt = "";
+        var x;
+        for(x in practise)
+        {
+            txt += practise[x] + ","+ "<br/>";
+        }
+        document.write(txt);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
