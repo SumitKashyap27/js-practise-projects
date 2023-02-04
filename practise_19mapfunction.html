@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //console.clear();
+        //const mArr = [1, 2, 3, 4, 5];
+        //let newArr = mArr.map((data,pos)=>{
+        //    console.log(`Item at pos ${pos} is ${data}`);
+        //    return data * 2
+        //})
+        const mArr = [
+            {
+                name: "john ",
+                experience: 10,
+                type: 'commercial'
+            },
+            {
+                name: "jonny ",
+                experience: 20,
+                type: 'private'
+            },
+            {
+                name: "ponny",
+                experience: 30,
+                type: 'commercial'
+            },
+        ];
+        let newArr = mArr.map((data,pos)=>{
+            console.log(data);
+            return {
+                name: data.name,
+                experience: data.experience
+            };
+        });
+console.log(mArr);
+console.log(newArr);
+    </script>
+</body>
+</html>
