@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //from function
+        function person(name, birthyear){
+            this.name = name;
+            this.yearOfBirth = birthyear;
+
+            this.getDetails = function (){
+                return 'name:'+ this.name + " and age:" +(2023-this.yearOfBirth);
+            }
+        }
+        var sumit = new person("sumit",2002);
+        console.log(sumit.getDetails());
+        //from class
+        class person1{
+            constructor(name, birthyear){
+                this.name = name;
+                this.yearOfBirth = birthyear;
+            }
+            getDetails1 = () => {
+                return `name: ${this.name} and age: ${2023 - this.birthyear}`
+            }
+        }
+        var rohit = new person1("rohit", 1996);
+        console.log(rohit.getDetails1());
+    </script>
+    
+</body>
+</html>
