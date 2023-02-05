@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //from class
+        console.clear();
+        class person{
+            constructor(name, birthyear){
+                this.name = name;
+                this.yearOfBirth = birthyear;
+            }
+            getDetails = () => {
+                return `name: ${this.name} and age: ${2023 - this.yearOfBirth}`
+            }
+        }
+        class pilot extends person{
+            constructor(exp, type, license) {
+                super('jhon wick', 1980);
+                this.experience = exp;
+                this.type = type;
+                this.license = license;
+            }
+            getData = ( ) => {
+                console.log(`${this.getDetails()} and experience: ${this.experience} ,type: ${this.type} and license: ${this.license}`)
+            }
+        }
+        const jhon = new pilot(28, "private","tc1234");
+        console.log(jhon);
+        jhon.getData();
+      //  var rohit = new person("rohit", 1996);
+      //  console.log(rohit.getDetails());
+    </script>
+    
+</body>
+</html>
