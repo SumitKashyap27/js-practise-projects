@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Drumset</title>
+    <link href="drum.css" rel="stylesheet">
+    <link href="images/fevicon/top-view-piano-keys.jpg" rel="shortcut icon">
+</head>
+<body>
+    <script>
+      const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+      
+        function play() {
+          var audio = document.getElementById("audio");
+          audio.play();
+        }
+    document.addEventListener('keydown', function(e) {
+    if (e.keyCode == 65) {
+      document.getElementById('audio').play();
+    }
+    else if
+        (e.keyCode == 83) {
+      document.getElementById('audio1').play();
+    }
+
+    else if
+        (e.keyCode == 68) {
+      document.getElementById('audio2').play();
+    }
+    else if
+        (e.keyCode == 70) {
+      document.getElementById('audio3').play();
+    }
+    else if
+        (e.keyCode == 71) {
+      document.getElementById('audio4').play();
+    }
+    else if 
+        (e.keyCode == 72) {
+      document.getElementById('audio5').play();
+    }
+    else if 
+        (e.keyCode == 74) {
+      document.getElementById('audio6').play();
+    }
+    else if 
+        (e.keyCode == 75) {
+      document.getElementById('audio7').play();
+    }
+    else if 
+        (e.keyCode == 76) {
+      document.getElementById('audio8').play();
+    }
+    else 
+    {
+      alert("press some keys");
+    }
+  });
+    
+    </script>
+    <div class="title"><u>drum</u></div>
+    <div class="keys">
+        <div class="key" data-key="65" onclick="play()">
+            <kbd>A</kbd>
+        <span class="sound">clap </span>
+        
+        <!---<input type="button" data-key="65" value="A" >--->
+      <audio id="audio" src="sound/01 - JavaScript Drum Kit_sounds_boom (1).wav"></audio>
+        </div>
+        <div class="key" data-key="83" onclick="play()">
+            <kbd>S</kbd>
+            <span class="sound">clap</span>
+            <audio id="audio1" src="sound/01 - JavaScript Drum Kit_sounds_clap.wav"></audio>
+          </div>
+        <div class="key" data-key="68" onclick="play()">
+            <kbd>D</kbd>
+            <span class="sound">clap</span>
+            <audio id="audio2" src="sound/01 - JavaScript Drum Kit_sounds_hihat.wav"></audio>
+          </div>
+        <div class="key" data-key="70" onclick="play()">
+            <kbd>F</kbd>
+            <span class="sound">clap</span>
+            <audio id="audio3" src="sound/01 - JavaScript Drum Kit_sounds_kick.wav"></audio>
+          </div>
+        <div class="key" data-key="71" onclick="play()">
+            <kbd>G</kbd>
+            <span class="sound">clap</span>
+            <audio id="audio4" src="sound/01 - JavaScript Drum Kit_sounds_openhat.wav"></audio>
+          </div>
+        <div class="key" data-key="72" onclick="play()">
+            <kbd>H</kbd>
+            <span class="sound">clap</span>
+            <audio id="audio5" src="sound/01 - JavaScript Drum Kit_sounds_ride.wav"></audio>
+          </div>
+        <div class="key" data-key="74" onclick="play()">
+            <kbd>J</kbd>
+            <span class="sound">clap</span>
+            <audio id="audio6" src="sound/01 - JavaScript Drum Kit_sounds_snare.wav"></audio>
+          </div>
+        <div class="key" data-key="75" onclick="play()">
+            <kbd>K</kbd>
+            <span class="sound">clap</span>
+            <audio id="audio7" src="sound/01 - JavaScript Drum Kit_sounds_tink.wav"></audio>
+          </div>
+        <div class="key" data-key="76" onclick="play()">
+            <kbd>L</kbd>
+            <span class="sound">clap</span>
+            <audio id="audio8" src="sound/01 - JavaScript Drum Kit_sounds_tom.wav"></audio>
+          </div>
+
+    </div>
+
+
+    <!--<audio src="musical notes/C4.mp3" data-key="65"></audio>
+    <audio src="musical notes/Cs4.mp3" data-key="83"></audio>
+    <audio src="musical notes/D4.mp3" data-key="68"></audio>
+    <audio src="musical notes/Ds4.mp3" data-key="70"></audio>
+    <audio src="musical notes/E4.mp3" data-key="71"></audio>
+    <audio src="musical notes/F4.mp3" data-key="72"></audio>
+    <audio src="musical notes/Fs4.mp3" data-key="74"></audio>
+    <audio src="musical notes/G4.mp3" data-key="75"></audio>
+    <audio src="musical notes/Gs4.mp3" data-key="76"></audio>--->
+
+</body>
+</html>
