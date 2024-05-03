@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=[34, 5, 6, 78, 1, 2];
+        var sum=0;
+        var lar=0;
+        arr.forEach(function(val,ind){
+            sum+=val;
+            console.log(val);
+            if(lar<val){
+                lar=val;
+            }
+        });
+        console.log("the sum is " + sum + " and largest number in the array is " + lar);
+    </script>
+</body>
+</html>
